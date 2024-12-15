@@ -1,2 +1,1 @@
-
-    def resolve(self, name):
+def resolve(self, name):
