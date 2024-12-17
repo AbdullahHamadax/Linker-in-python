@@ -14,10 +14,20 @@ class LinkerGUI:
         self.label = ctk.CTkLabel(self.main_frame, text="Select Object Files:")
         self.label.pack(pady=(0, 10))
 
-        self.select_button = ctk.CTkButton(self.main_frame, text="Select Files", command=self.select_files, text_color="#3C3C3B", fg_color="green", hover_color="red")
+        self.select_button = ctk.CTkButton(self.main_frame, 
+                                           text="Select Files", 
+                                           command=self.select_files, 
+                                           text_color="#3C3C3B", 
+                                           fg_color="green", 
+                                           hover_color="red")
         self.select_button.pack(pady=(0, 10))
 
-        self.link_button = ctk.CTkButton(self.main_frame, text="Link Files", command=self.link_files, text_color="#3C3C3B", fg_color="green", hover_color="red")
+        self.link_button = ctk.CTkButton(self.main_frame, 
+                                         text="Link Files", 
+                                         command=self.link_files, 
+                                         text_color="#3C3C3B", 
+                                         fg_color="green", 
+                                         hover_color="red")
         self.link_button.pack(pady=(0, 10))
 
         self.output_text = ctk.CTkTextbox(self.main_frame, height=250, width=250, border_color="red", state="normal")
