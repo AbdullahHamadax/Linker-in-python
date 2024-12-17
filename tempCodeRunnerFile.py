@@ -1,1 +1,0 @@
-def resolve(self, name):

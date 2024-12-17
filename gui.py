@@ -25,6 +25,11 @@ class LinkerGUI:
 
         self.object_files = []
 
+        self.clear_button = ctk.CTkButton(self.main_frame, text="Clear Output", command=self.clear_output, text_color="#3C3C3B", fg_color="orange", hover_color="red")
+        self.clear_button.pack(pady=(0, 10))
+
+
+
         self.footer = ctk.CTkLabel(master, text="Made with 💘 for Dr. Ayman", font=("Helvetica", 20))
         self.footer.pack(side=ctk.BOTTOM, pady=(10, 10))
 
@@ -34,6 +39,10 @@ class LinkerGUI:
             self.output_text.insert(ctk.END, "⏬ Selected Files: ⏬\n")
             for file in self.object_files:
                 self.output_text.insert(ctk.END, f"{file}\n")
+
+
+    def clear_output(self):
+        self.output_text.delete('1.0', ctk.END)
 
     def link_files(self):
         if not self.object_files:

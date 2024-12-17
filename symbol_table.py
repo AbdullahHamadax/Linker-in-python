@@ -1,5 +1,5 @@
 class SymbolTable:
-    def _init_(self):
+    def __init__(self):
         self.symbols = {}
 
     def add_symbol(self, name, address):
