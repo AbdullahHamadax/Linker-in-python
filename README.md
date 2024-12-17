@@ -1,7 +1,7 @@
 
 # 🔗 **Project Name**
 
-A Python-based project to **finish GUI development, linker class for symbol resolution, and relocation handling.**
+A Python-based linker project for systems programming.
 
 ---
 
@@ -62,7 +62,7 @@ A Python-based project to **finish GUI development, linker class for symbol reso
 
 ## 🎉 **Acknowledgements**
 
-Special thanks to contributors and open-source tools that made this project possible. 💻✨
+Special thanks to Abdallah Mousa and Marwan & Dr Ayman.
 
 ---
 
