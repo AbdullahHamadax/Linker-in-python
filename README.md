@@ -1,6 +1,3 @@
-Here's a clean and visually appealing README for your project with emojis 🚀:
-
----
 
 # 🔗 **Project Name**
 
