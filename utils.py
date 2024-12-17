@@ -25,8 +25,7 @@ def parse_object_file(filename):
                         address = int(symbol_address)
                     symbols[symbol_name] = address
                 except ValueError:
-                    print(f"Warning: Could not parse symbol address '{
-                          symbol_address}'")
+                    print(f"Warning: Could not parse symbol address '{symbol_address}'")
         elif not in_sym_section and line:
             code.append(line)
 
