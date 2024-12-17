@@ -25,9 +25,8 @@ A Python-based linker project for systems programming.
 │   ├── file1.obj
 │   └── file2.obj
 ├── README.md             # Project documentation
-├── gui.py                # GUI implementation
+├── gui.py                # GUI implementation & entry point
 ├── linker.py             # Linker class for symbol resolution
-├── main.py               # Main entry point
 ├── object_file.py        # Object file parser
 ├── symbol_table.py       # Relocation handling
 ├── tempCodeRunnerFile.py # Temporary code runner fixes
@@ -50,7 +49,7 @@ A Python-based linker project for systems programming.
    ```
 3. Run the main script:
    ```bash
-   python main.py
+   python gui.py
    ```
 ---
 
