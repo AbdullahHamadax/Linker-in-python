@@ -40,7 +40,7 @@ A Python-based linker project for systems programming.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/YourRepo.git
+   git clone https://github.com/AbdullahHamadax/linker-in-python.git
    cd YourRepo
    ```
 
