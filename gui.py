@@ -35,7 +35,12 @@ class LinkerGUI:
 
         self.object_files = []
 
-        self.clear_button = ctk.CTkButton(self.main_frame, text="Clear Output", command=self.clear_output, text_color="#3C3C3B", fg_color="orange", hover_color="red")
+        self.clear_button = ctk.CTkButton(self.main_frame, 
+                                          text="Clear Output", 
+                                          command=self.clear_output, 
+                                          text_color="#3C3C3B", 
+                                          fg_color="orange", 
+                                          hover_color="red")
         self.clear_button.pack(pady=(0, 10))
 
 
