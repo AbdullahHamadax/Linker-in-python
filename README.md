@@ -48,16 +48,11 @@ A Python-based linker project for systems programming.
    ```bash
    pip install customtkinter
    ```
-
-
 3. Run the main script:
    ```bash
    python main.py
    ```
-
-
 ---
-
 
 
 ## 🎉 **Acknowledgements**
@@ -65,4 +60,3 @@ A Python-based linker project for systems programming.
 Special thanks to Abdallah Mousa and Marwan & Dr Ayman.
 
 ---
-
