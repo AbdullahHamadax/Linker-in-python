@@ -1,5 +1,5 @@
 
-# 🔗 **Project Name**
+# 🔗 **Linker In Python**
 
 A Python-based linker project for systems programming.
 
@@ -25,9 +25,8 @@ A Python-based linker project for systems programming.
 │   ├── file1.obj
 │   └── file2.obj
 ├── README.md             # Project documentation
-├── gui.py                # GUI implementation
+├── gui.py                # GUI implementation & entry point
 ├── linker.py             # Linker class for symbol resolution
-├── main.py               # Main entry point
 ├── object_file.py        # Object file parser
 ├── symbol_table.py       # Relocation handling
 ├── tempCodeRunnerFile.py # Temporary code runner fixes
@@ -40,24 +39,19 @@ A Python-based linker project for systems programming.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/YourRepo.git
-   cd YourRepo
+   git clone https://github.com/AbdullahHamadax/linker-in-python.git
+   cd linker-in-python
    ```
 
 2. Install dependencies:
    ```bash
    pip install customtkinter
    ```
-
-
 3. Run the main script:
    ```bash
-   python main.py
+   python gui.py
    ```
-
-
 ---
-
 
 
 ## 🎉 **Acknowledgements**
@@ -65,4 +59,3 @@ A Python-based linker project for systems programming.
 Special thanks to Abdallah Mousa and Marwan & Dr Ayman.
 
 ---
-
