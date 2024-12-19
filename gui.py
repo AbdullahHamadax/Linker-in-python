@@ -1,10 +1,16 @@
+"""This is the GUI implementation of our project"""
+
 from tkinter import filedialog, messagebox
 import customtkinter as ctk
 from linker import Linker
 
 
 class LinkerGUI:
+
+    """This is the function"""
+
     def __init__(self, master):
+        """This is a doctring to improve our code quality """
         self.master = master
         master.title("Linker")
         ctk.set_appearance_mode("System")  #
@@ -34,7 +40,7 @@ class LinkerGUI:
         self.output_text = ctk.CTkTextbox(self.main_frame,
                                           height=250,
                                           width=250,
-                                          border_color="red", state="normal")
+                                          border_color="red", state="disabled")
         self.output_text.pack(pady=(0, 10))
 
         self.object_files = []
@@ -52,17 +58,31 @@ class LinkerGUI:
         self.footer.pack(side=ctk.BOTTOM, pady=(10, 10))
 
     def select_files(self):
+        """This is a doctring to improve our code quality """
+        self.output_text.configure(state="normal")
         self.object_files = filedialog.askopenfilenames(title="Select Object Files",
                                                         filetypes=[("Object Files", "*.obj")])
         if self.object_files:
             self.output_text.insert(ctk.END, "⏬ Selected Files: ⏬\n")
             for file in self.object_files:
                 self.output_text.insert(ctk.END, f"{file}\n")
+        self.output_text.configure(state="disabled")
 
     def clear_output(self):
+        """This is a doctring to improve our code quality """
+        self.output_text.configure(state="normal")
         self.output_text.delete('1.0', ctk.END)
+        self.output_text.configure(state="disabled")
 
     def link_files(self):
+        """This is a doctring to improve our code quality """
+        self.output_text.configure(state="normal")
+        if len(self.object_files)<2:
+            messagebox.showwarning(
+                "⭕ Warning!!!!!!!!! ⭕", "You must select more than ONE file!!!!")
+            return
+
+
         if not self.object_files:
             messagebox.showwarning(
                 "⭕ Warning!!!!!!!!! ⭕", "You did NOT select any object files!")
@@ -77,6 +97,7 @@ class LinkerGUI:
 
         self.output_text.insert(
             ctk.END, "\n✅ Linking complete ✅. Output saved to 'output/linked_output.obj'.\n")
+        self.output_text.configure(state="disabled")
 
 
 if __name__ == "__main__":

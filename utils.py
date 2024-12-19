@@ -1,4 +1,8 @@
+"""This is the utils class"""
+
+
 def parse_object_file(filename):
+    """This is a doctring to improve our code quality """
     with open(filename, 'r') as f:
         lines = f.readlines()
 
@@ -13,7 +17,7 @@ def parse_object_file(filename):
             in_sym_section = True
             continue
 
-        elif in_sym_section and line:
+        if in_sym_section and line:
             parts = line.split()
             if len(parts) == 2:
                 symbol_name, symbol_address = parts
